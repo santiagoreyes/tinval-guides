@@ -63,3 +63,9 @@ El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el 
 
 ![Ver Solicitudes](USER_SolicitudesValidacion_01.png)
    
+El sistema mostrará el resultado de los TINs validados tanto de manera individual como por lote, indicando el número de asignado, con la cual puede ver detalles del resultado en la opción: "Ver", normalmente aparecerá en orden de fecha de solictudes.
+
+### Notas importantes
+
+* El sistema solo permitirá ver solicitudes de validacion de los ultimos 30 dias.
+* El sistema solo permitirá filtrar información para busqueda de los lotes validados. 
