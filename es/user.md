@@ -21,12 +21,12 @@ Guías Previas: Seguridad y Control de Acceso (Web) - TEST CAMBIO
 
 
 
-El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el número de solicitud asignada, con la cual puede buscarla en la opción: "Ver Resultados", normalmente aparecerá entre los primeros.
+El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el número de solicitud asignada, con la cual puede buscarla en la opción: "Ver Solicitudes", normalmente aparecerá entre los primeros.
 
 ### Notas importantes
 
 * El sistema solo permitirá seleccionar país destino si este se encuentra inscrito en el sistema.
-* El sistema usará el como nivel de validación, el definido entre el país del usuario solicitante y el país destino.
+* El sistema usará como nivel de validación, el definido entre el país del usuario solicitante y el país destino.
 * El sistema usará las reglas que encuentre basado en la combinación de País Destino, Tipo Documento, Tipo de Persona, caso contrario evaluará a TIN inválido.
 * El sistema requiere que se completen todos los campos solicitados.
 
@@ -43,7 +43,7 @@ El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el 
    
 ![Validar Lotes](USER_ValidarLotes_01.png)
 
-El sistema....
+El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el número de lote asignada, con la cual puede buscarla en la opción: "Ver Solicitudes", normalmente aparecerá entre los primeros.
 
 ### Notas importantes
 
@@ -53,6 +53,13 @@ El sistema....
 
 
 
-## Ver resultados validaciones
+## Ver solicitudes de validaciones
 
-*(Contenido pendiente)*
+**Propósito**: Ver el resultado de los TINs validados ya sea de manera individual y por lotes, su estado y detalles de los mismos.
+
+### Pasos
+1. Navegar a "Ver Solicitudes de Validaciones"
+2. Presionar "Ver" de los diferentes Tins Validados ya sea individual o por lote.
+
+![Ver Solicitudes](USER_SolicitudesValidacion_01.png)
+   
