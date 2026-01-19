@@ -40,7 +40,8 @@ El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el 
    1. Seleccionar el archivo con los tins.
 3. Presionar "Enviar"
 
-![Validar TIN Lote](USER_ValidarLotes_01.png)
+   
+![Validar Lotes](USER_ValidarLotes01.png)
 
 El sistema....
 
