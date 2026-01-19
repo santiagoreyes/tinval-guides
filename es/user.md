@@ -32,7 +32,25 @@ El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el 
 
 ## Validar Lote de TINs
 
-*(Contenido pendiente)*
+**Propósito**: Validar TINs por lotes, incluidos en archivos de acuerdo a los formatos soportados (JSON, XML, CSV).
+
+### Pasos
+1. Navegar a "Validar Lote de Tin"
+2. Ingresar los datos solicitados:
+   1. Seleccionar el archivo con los tins.
+3. Presionar "Enviar"
+
+![Validar TIN Lote](USER_ValidarLotes_01.png)
+
+El sistema....
+
+### Notas importantes
+
+* El sistema solo permitirá archivos XML, JSON, CSV
+* El sistema solo permitirá archivos bien estructurados, en caso contrario los rechazará informando los errores encontrados.
+* El sistema solo permitirá subir archivos de máximo 1 MB de tamaño.
+
+
 
 ## Ver resultados validaciones
 
