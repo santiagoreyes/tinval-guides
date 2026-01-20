@@ -90,9 +90,8 @@ El sistema mostrará el resultado de los TINs validados tanto de manera individu
 1. Navegar a "Ver Solicitudes de Validación"
 2. En la lista puede observar segun del número de lote de validación asignado y su estado Pendiente.
 3. Presionar "Ver" mostrara Detalles del Lote en estado Pendiente.
-4. Podra ver la lista de los TINs cada uno con su estado y desplegado
-5. Podra ver la lista de los TINs cada uno con la opción "Ver" para detalles de cada uno.
-6. Tiene la opcion de "Search" para busqueda general
+4. Podra ver la lista de los TINs cada uno con su estado y una ves Procesado el Lote, tiene la opción "Ver" para detalles de cada uno.
+6. Tiene la opcion de "Search" para busqueda general.
 7. Se muestra un filtro con varias opciones de búsqueda accesible para opciones mas específicas..
 8. Puede exportar la información en formato excel.
    
