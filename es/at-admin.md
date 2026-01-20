@@ -34,19 +34,19 @@ El administrador debera ingresar los datos del cliente asi como el certificado s
 5. Verificar que el certificado sea válido
 6. Hacer clic en "Registrar Cliente".
 
+  
+![Subir Certificado](AT_ADMIN_SubirCertificado_01.png)
+
 ### Requisitos del certificado:
 - Formato: PEM (Privacy Enhanced Mail)
 - Algoritmo: RSA con mínimo 2048 bits
 - Certificado público solamente (no incluir clave privada)
 - Máximo tamaño: 5KB
-
 ### Verificación del certificado:
 El sistema validará automáticamente:
 - Formato correcto del certificado
 - Fecha de expiración (mínimo 30 días de validez)
 - Estructura de clave RSA válida
-  
-![Subir Certificado](AT_ADMIN_SubirCertificado_01.png)
 
 ## Gestionar Usuarios
 El administrador podra crear usuarios nuevos o editar los datos de los usarios ya creados. Tambien puede desahabiltar usuarios.
@@ -70,12 +70,7 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
 - **AT_ADMIN**: Gestionar usuarios, cargar certificados, configuración API, ver estadísticas
 - **CIAT_ADMIN**: Todas las funciones del sistema, administración global
 
-### Restablecer contraseña:
-
-1. Buscar usuario en la lista
-2. Hacer clic en "Acciones" → "Restablecer Contraseña"
-3. El sistema generará una contraseña temporal
-4. Enviar la nueva contraseña al usuario por correo seguro
+guro
 
 ## Configuración de API
 
@@ -88,11 +83,9 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
 ### Configurar límites de tasa:
 
 1. Navegar a "Configuración API"
-2. Establecer límites por usuario:
-   - Máximo de solicitudes por minuto
-   - Máximo de TINs por lote
-   - Tiempo de espera máximo
-3. Guardar configuración
+2. Ingresar URL
+3. Elegir el Formato JSON, XML, CSV
+4. Guardar configuración
 
 ![Configuración de API](AT_ADMIN_ConfiguracionApi_01.png)
 
@@ -104,13 +97,6 @@ El sistema proporciona:
 - Alertas de sobrecarga
 - Reportes de actividad diaria/semanal/mensual
 
-### Pruebas de conexión:
-
-Para verificar la conectividad API:
-1. Ir a "Herramientas" → "Prueba de Conexión"
-2. Seleccionar endpoint a probar
-3. Hacer clic en "Probar Conexión"
-4. Verificar respuesta y tiempo de respuesta
 
 ---
 
