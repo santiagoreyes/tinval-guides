@@ -20,7 +20,7 @@ Puede generar informe usando los diferentes filtros de: informe, fecha inicio, f
 3. Presione en "Generar Informe" se deplegara la información solicitada.
 4. Puede "Descargar" el Informe.
 
-![Estadísticas](#USER_EstadisticasAdmin_01)
+![Estadísticas](AT-ADMIN_EstadisticasAdmin_01.png)
 
 ## Subir Certificado
 El administrador debera ingresar los datos del cliente asi como el certificado segun las especificaciones solicitadas. Tambien podra actualizar el certificado.
@@ -46,7 +46,7 @@ El sistema validará automáticamente:
 - Fecha de expiración (mínimo 30 días de validez)
 - Estructura de clave RSA válida
   
-[Subir Certificado](#USER_SubirCertificado_01)
+![Subir Certificado](AT-ADMIN_SubirCertificado_01.png)
 
 ## Gestionar Usuarios
 El administrador podra crear usuarios nuevos o editar los datos de los usarios ya creados. Tambien puede desahabiltar usuarios.
@@ -62,7 +62,7 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
    - Confirma Contraseña
 4. Hacer clic en "Crear Usuario"
 
-[Gestionar Usuarios](#USER_GestionarUsuario_01)
+![Gestionar Usuarios](AT-ADMIN_GestionarUsuario_01.png)
 
 ### Permisos por rol:
 
@@ -94,7 +94,7 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
    - Tiempo de espera máximo
 3. Guardar configuración
 
-[Configuración de API](#USER_ConfiguracionApi_01)
+![Configuración de API](AT-ADMIN_ConfiguracionApi_01.png)
 
 ### Monitoreo de API:
 
