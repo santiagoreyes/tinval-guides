@@ -21,7 +21,7 @@ Guías Previas: Seguridad y Control de Acceso (Web) - TEST CAMBIO
 
 
 
-El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el número de solicitud asignada, con la cual puede buscarla en la opción: "Ver Solicitudes", normalmente aparecerá entre los primeros.
+El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el número de solicitud asignada, con la cual puede buscarla en la opción: "Ver Solicitudes de Validaciones", normalmente aparecerá entre los primeros.
 
 ### Notas importantes
 
@@ -64,6 +64,28 @@ El sistema procesa la solicitud y devolverá un mensaje de éxito, indicando el 
 ![Ver Solicitudes](USER_SolicitudesValidacion_01.png)
    
 El sistema mostrará el resultado de los TINs validados tanto de manera individual como por lote, indicando el número de asignado, con la cual puede ver detalles del resultado en la opción: "Ver", normalmente aparecerá en orden de fecha de solictudes.
+
+### Ver Detalle de Validación Individual
+1. Navegar a "Ver Solicitudes de Validación"
+2. En la lista puede observar la validación Individual segun del número de validación asignado.
+3. Presionar "Ver" mostrara Detalles del TIN validado
+
+![Ver Validacion Individual](USER_ValidacionIndividual_01.png)
+![Ver Detalle de Validacion Individual](USER_DetalleValidacionIndividual_01.png)
+
+### Ver Detalle de Validación de Lote Completado
+1. Navegar a "Ver Solicitudes de Validación"
+2. En la lista puede observar segun del número de lote de validación asignado y su estado Completado.
+3. Presionar "Ver" mostrara Detalles del Lote validado.
+
+![Ver Validacion de Lote Completado](USER_ValidacionLoteCompletado_01.png)
+
+### Ver Detalle de Validación de Lote Pendiente
+1. Navegar a "Ver Solicitudes de Validación"
+2. En la lista puede observar segun del número de lote de validación asignado y su estado Pendiente.
+3. Presionar "Ver" mostrara Detalles del Lote en estado Pendiente.
+
+![Ver Detalle de Validacion Lote Pendiente](USER_ValidacionLotePendiente_01.png)
 
 ### Notas importantes
 
