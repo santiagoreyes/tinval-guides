@@ -7,23 +7,32 @@ Sistema de Validación de TIN - CRS-CIAT
 ## Navegación Rápida
 
 - [Estadísticas](#estadísticas)
-- [Cargar Certificado](#cargar-certificado)
+- [Subir Certificado](#cargar-certificado)
 - [Gestionar Usuarios](#gestionar-usuarios)
 - [Configuración de API](#configuración-de-api)
 
 ## Estadísticas
+Puede generar informe usando los diferentes filtros de: informe, fecha inicio, fecha fin, nivel periódo, país destino, país origen. Solo se pueden ver datos donde el país esté involucrado como Origen o Destino.
 
-*(Agrega aquí tu contenido, capturas de pantalla, pasos, etc.)*
+### Pasos
+1. Navegue en la sección "Estadíscas" en el menú principal.
+2. Elija los diferentes filtros a su disposición.
+3. Presione en "Generar Informe" se deplegara la información solicitada.
+4. Puede "Descargar" el Informe.
 
-## Cargar Certificado
+![Estadísticas](#USER_EstadisticasAdmin_01)
 
-### Proceso para cargar certificado público:
+## Subir Certificado
+El administrador debera ingresar los datos del cliente asi como el certificado segun las especificaciones solicitadas. Tambien podra actualizar el certificado.
 
-1. Navegar a la sección "Certificados" en el menú principal
-2. Hacer clic en "Subir Certificado"
-3. Seleccionar el archivo `public_cert.pem`
-4. Verificar que el certificado sea válido
-5. Hacer clic en "Guardar"
+### Proceso para subir certificado público:
+
+1. Navegar a la sección "Subir Certificado" en el menú principal
+2. Ingrese el nombre del Cliente
+3. Ingrese el correo del Cliente
+4. Seleccionar el archivo `public_cert.pem`
+5. Verificar que el certificado sea válido
+6. Hacer clic en "Registrar Cliente".
 
 ### Requisitos del certificado:
 - Formato: PEM (Privacy Enhanced Mail)
@@ -36,19 +45,24 @@ El sistema validará automáticamente:
 - Formato correcto del certificado
 - Fecha de expiración (mínimo 30 días de validez)
 - Estructura de clave RSA válida
+  
+[Subir Certificado](#USER_SubirCertificado_01)
 
 ## Gestionar Usuarios
+El administrador podra crear usuarios nuevos o editar los datos de los usarios ya creados. Tambien puede desahabiltar usuarios.
 
 ### Crear nuevo usuario:
 
 1. Ir a "Gestión de Usuarios"
-2. Hacer clic en "Nuevo Usuario"
-3. Completar los campos obligatorios:
-   - Nombre completo
+3. Completar la información en "Crear Nuevo Usuario" con los campos obligatorios:
+   - Nombre
+   - Apellido
    - Correo electrónico
-   - Rol (Seleccionar: USUARIO, AT_ADMIN, CIAT_ADMIN)
-   - País asignado
+   - Contraseña
+   - Confirma Contraseña
 4. Hacer clic en "Crear Usuario"
+
+[Gestionar Usuarios](#USER_GestionarUsuario_01)
 
 ### Permisos por rol:
 
@@ -79,6 +93,8 @@ El sistema validará automáticamente:
    - Máximo de TINs por lote
    - Tiempo de espera máximo
 3. Guardar configuración
+
+[Configuración de API](#USER_ConfiguracionApi_01)
 
 ### Monitoreo de API:
 
