@@ -66,7 +66,7 @@ Las Definiciones de Nivel de Paises puede ser por:
 4. Definir niveles de validación (1, 2 o 3)
 6. Dar Clik en "Create"
 
-![Definiciones de Nive](CIAT_ADMIN_DefinicionesNivel_CrearDefinicion_01.png)
+![Definiciones de Nivel](CIAT_ADMIN_DefinicionesNivel_CrearDefinicion_01.png)
  
 ### Niveles de Validación:
 - Nivel 1: Solo validación de formato y Dígito Verificador
