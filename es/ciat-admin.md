@@ -32,55 +32,54 @@ El panel de estadísticas proporciona información en tiempo real sobre el uso y
 5. Hacer clic en "Generar Reporte"
 6. Exportar a PDF, Excel o CSV
 
-### Monitoreo en Tiempo Real:
-- Contador de validaciones en vivo
-- Gráficos de tiempo de respuesta API
-- Monitoreo de tasa de errores
-- Seguimiento de actividad de usuarios
+![Estadísticas Generar Reportes](CIAT_ADMIN_GenerarReportes_01.png)
+
 
 ## Gestionar Países
 
 ### Agregar Nuevo País:
-1. Ir a "Países" → "Agregar Nuevo País"
-2. Ingresar información del país:
-   - Código de País (ISO 3166-1 alpha-2)
+1. Ir a "Gestionar Países" → "Agregar Nuevo País y Usuario Administrador"
+2. Seleccione un Pais:
    - Nombre del País (nombre oficial)
    - Nombre de la Autoridad Tributaria
-   - Información de Contacto
-   - Estado (Activo/Inactivo)
-3. Cargar bandera/logo del país (opcional)
-4. Hacer clic en "Guardar"
+   - Acrónimo de administración tributaria
+3. Crear Usuario administrador
+   - Nombre 
+   - Apellido
+   - Correo electronico
+   - Contraseña y Confirmación
+5. Hacer clic en "Enroll"
 
-### Gestión de Estado del País:
-- **Activo**: El país puede participar en validaciones
-- **Inactivo**: País suspendido temporalmente
-- **Pendiente**: Esperando aprobación/configuración
-- **Retirado**: Ya no participa
+![Gestionar Paises](CIAT_ADMIN_GestionarPaises_01.png)
 
-### Operaciones Masivas:
-- Importar lista de países via CSV
-- Actualizar múltiples países simultáneamente
-- Exportar configuración de países
+
+### Gestión Administrador de País.
+- Modificar datos de administrador.
+- Cambiar de Administrador eliminando el actual.
+
+![Gestionar Paises](CIAT_ADMIN_GestionarPaises_EditarAdmin_01.png)
+![Gestionar Paises](CIAT_ADMIN_GestionarPaises_CambiarAdmin_01.png)
+
 
 ## Definiciones de Nivel por País
+Las Definiciones de Nivel de Paises puede ser por:
+1. Acuerdos Bilaterales: Validación directa entre dos países
+2. Defecto: El país elige un nivel a ser validado
+3. Mínimo: El país elige un nivel  minimo a ser validado 
 
-### Tipos de Acuerdos:
-1. **Acuerdos Bilaterales**: Validación directa entre dos países
-2. **Acuerdos Multilaterales**: Múltiples países bajo marco común
-3. **Acceso Unilateral**: El país puede validar pero no ser validado
-
-### Configurar Acuerdos:
-1. Seleccionar "Acuerdos" del menú principal
-2. Elegir tipo de acuerdo
+### Agregar Nueva Definición
+1. Seleccionar "Add New Definition" 
+2. Elegir tipo de definición
 3. Seleccionar países participantes
 4. Definir niveles de validación (1, 2 o 3)
-5. Establecer fechas efectivas
-6. Configurar reglas de notificación
+6. Dar Clik en "Create"
 
+![Definiciones de Nive](CIAT_ADMIN_DefinicionesNivel_CrearDefinicion_01.png)
+ 
 ### Niveles de Validación:
-- **Nivel 1**: Solo validación de formato
-- **Nivel 2**: Verificación básica de existencia
-- **Nivel 3**: Validación completa con detalles del contribuyente
+- Nivel 1: Solo validación de formato y Dígito Verificador
+- Nivel 2: Nivel 1 y existencia del número y Porcentaje de coincidencia del nombre
+- Nivel 3: Validación completa con detalles del contribuyente
 
 ### Monitoreo de Acuerdos:
 - Seguir fechas de expiración de acuerdos
