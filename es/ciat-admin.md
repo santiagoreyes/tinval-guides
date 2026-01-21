@@ -4,14 +4,6 @@ Sistema de Validación de TIN - CRS-CIAT
 
 > Esta guía está destinada únicamente a usuarios autorizados.
 
-## Navegación Rápida
-
-- [Estadísticas](#estadísticas)
-- [Gestionar Países](#gestionar-países)
-- [Definiciones de Nivel por País](#definiciones-de-nivel-por-país)
-- [Configuración de Reglas Nivel 1](#configuración-de-reglas-nivel-1)
-- [Salud del Sistema](#salud-del-sistema)
-
 ## Estadísticas
 
 ### Panel de Resumen
