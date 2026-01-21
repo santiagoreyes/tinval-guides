@@ -56,25 +56,20 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
    - Confirma Contraseña
 4. Hacer clic en "Crear Usuario"
 
-![Gestionar Usuarios](AT_ADMIN_GestionarUsuario_01.png)
+![Gestionar Usuarios](AT_ADMIN_GestionarUsuarios_01.png)
 
-### Permisos por rol:
+### Modificar usuario existente:
 
-- **USUARIO**: Validar TINs individuales y por lote, ver resultados
-- **AT_ADMIN**: Gestionar usuarios, cargar certificados, configuración API, ver estadísticas
-- **CIAT_ADMIN**: Todas las funciones del sistema, administración global
-
-guro
+1. Ir a "Gestión de Usuarios"
+3. Dar Click "Editar" usuario existente, ingrese la información a modificar:
+   - Nombre
+   - Apellido
+   - Correo electrónico
+  4. Hacer clic en "Guardar Cambios"
+   
+![Gestionar Usuarios](AT_ADMIN_GestionarUsuarios_02.png)
 
 ## Configuración de API
-
-### Endpoints disponibles:
-
-- **Validación individual**: `POST /api/v1/validate/single`
-- **Validación por lote**: `POST /api/v1/validate/batch`
-- **Consulta de resultados**: `GET /api/v1/results/{id}`
-
-### Configurar límites de tasa:
 
 1. Navegar a "Configuración API"
 2. Ingresar URL
