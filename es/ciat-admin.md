@@ -80,26 +80,27 @@ Aparecen los Países ya agregados con sus opciones para configurar reglas Nivel 
 5. Pruebe la Regla dando Click "Test Rule"
 6. Dar Click en "Save Rule"
 
+![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
 
 
 
 ## Salud del Sistema
-Monitereo del Sistema con herramientas comoÑ
-- Direcciones Activas o no de los Paises.
+Monitereo del Sistema con herramientas como:
 
 ### Monitoreo de las Direcciones de los Paises:
+- Direcciones Activas o no de los Paises.
 Dar Click en "Verificar EndPoints", podra ver las direcciones activas o no activas, que ponen a disposición los paises para verificar L2 y L3.
 
 ![Salud del Sistemal](CIAT_ADMIN_SaludSistema_Direcciones_01.png)
 
 
-### Validadcion de Reglas L1
+### Monitoreo de Validación de Reglas L1
 Dar Click en "Verify Rules", podra ver los casos de pueba de TINs definidos de los diferentes paises con sus reglas configuradas.
 
 ![Salud del Sistemal](CIAT_ADMIN_SaludSistema_ReglasValidadas_01.png)
 
 
-### Definición de cobertura de Niveles:
+###  Monitoreo Definiciones de cobertura de Niveles:
 Dar Click en "Get Coverage", podra ver los niveles definidos de los diferentes paises.
 
 ![Salud del Sistemal](CIAT_ADMIN_SaludSistema_DefinicionNiveles_01.png)
