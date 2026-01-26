@@ -80,7 +80,7 @@ Aparecen los Países ya agregados con sus opciones para configurar reglas Nivel 
 5. Pruebe la Regla dando Click "Test Rule"
 6. Dar Click en "Save Rule"
 
-![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
+
 
 
 ## Salud del Sistema
