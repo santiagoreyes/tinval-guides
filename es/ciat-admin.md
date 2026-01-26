@@ -5,24 +5,17 @@ Sistema de Validación de TIN - CRS-CIAT
 > Esta guía está destinada únicamente a usuarios autorizados.
 
 ## Estadísticas
-
-### Panel de Resumen
-El panel de estadísticas proporciona información en tiempo real sobre el uso y rendimiento del sistema.
-
-### Métricas Principales:
-- **Validaciones Totales**: Número de TINs validados (diario, semanal, mensual)
-- **Tasa de Éxito**: Porcentaje de validaciones exitosas
-- **Actividad por País**: Volumen de validaciones por país participante
-- **Uso de API**: Número de llamadas API vs uso de interfaz web
-- **Horas Pico**: Patrones de carga del sistema durante el día
+En estadísticas nos proporciona información en tiempo real sobre el uso y rendimiento del sistema.
 
 ### Generar Reportes:
-1. Navegar a "Estadísticas" → "Reportes"
-2. Seleccionar tipo de reporte (Resumen, Detallado, Personalizado)
-3. Elegir rango de fechas
-4. Seleccionar países (opcional)
-5. Hacer clic en "Generar Reporte"
-6. Exportar a PDF, Excel o CSV
+1. Navegar a "Estadísticas" 
+2. Seleccionar tipo de informe (Cantidad Datos Solicitados, Cantidad de Batchs solicitados,Consultas Relaizadas o Recibidad, etc).
+3. Elegir rango de fechas.
+4. Elegir Nivel (L1, L2, L3).
+5. Elegir Periódo.
+6. Seleccionar países pais de Origen, pais de Destino o todoslos países.
+7. Hacer clic en "Generar Reporte"
+8. Exportar a PDF, Excel o CSV
 
 ![Estadísticas Generar Reportes](CIAT_ADMIN_GenerarReportes_01.png)
 
@@ -69,93 +62,45 @@ Las Definiciones de Nivel de Paises puede ser por:
 ![Definiciones de Nivel](CIAT_ADMIN_DefinicionesNivel_CrearDefinicion_01.png)
  
 ### Niveles de Validación:
-- Nivel 1: Solo validación de formato y Dígito Verificador
-- Nivel 2: Nivel 1 y existencia del número y Porcentaje de coincidencia del nombre
-- Nivel 3: Validación completa con detalles del contribuyente
-
-### Monitoreo de Acuerdos:
-- Seguir fechas de expiración de acuerdos
-- Monitorear uso contra cuotas
-- Generar reportes de cumplimiento
-- Enviar recordatorios de renovación
+- Nivel 1: Solo validación de formato y Dígito Verificador.
+- Nivel 2: Valida laexistencia del número en registro y porcentaje de coincidencia del nombre.
+- Nivel 3: Validación completa con detalles del contribuyente.
 
 ## Configuración de Reglas Nivel 1
+Aparecen los Países ya agregados con sus opciones para configurar reglas Nivel 1. Estas pueden ser creadas, editadas y eliminadas.
 
-### Tipos de Reglas:
-1. **Reglas de Formato**: Validación de estructura de TIN
-2. **Reglas de Dígito de Control**: Validación matemática
-3. **Reglas de Longitud**: Conteo mínimo/máximo de caracteres
-4. **Reglas de Patrón**: Coincidencia de expresiones regulares
+### Confifuración de Reglas:
+1. Seleccione el País cuyas reglas quiere configurar
+2. Dar Click "Manage Rules"
+3. Dar Click "Add New Rules" y agregue Tipo de Documento, persona, Nombre.
+4. Agregue las reglas JSON y Test Case con los TINs de Prueba.
+5. Pruebe la Regla dando Click "Test Rule"
+6. Dar Click en "Save Rule"
 
-### Crear Reglas de Formato:
+![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_01.png)
+![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
 
-Nombre de Regla: Formato_TIN_US
-País: Estados Unidos
-Tipo de Regla: Patrón
-Patrón: ^[0-9]{3}-[0-9]{2}-[0-9]{4}$
-Descripción: Valida formato XXX-XX-XXXX
-
-
-### Prioridad de Reglas:
-1. Reglas específicas por país
-2. Reglas regionales (si aplica)
-3. Reglas globales predeterminadas
-
-### Probar Reglas:
-1. Ir a "Reglas" → "Probar Reglas"
-2. Ingresar TINs de prueba
-3. Seleccionar país
-4. Ejecutar validación
-5. Revisar resultados y aplicación de reglas
-
-### Mantenimiento de Reglas:
-- Control de versiones para cambios de reglas
-- Registro de auditoría de modificaciones
-- Capacidad de reversión
-- Actualizaciones programadas de reglas
 
 ## Salud del Sistema
+Monitereo del Sistema con herramientas comoÑ
+- Direcciones Activas o no de los Paises.
 
-### Panel de Monitoreo:
-- **Tiempo de Actividad del Sistema**: Disponibilidad actual e histórica
-- **Rendimiento de API**: Tiempos de respuesta y tasas de éxito
-- **Salud de Base de Datos**: Estado de conexión y rendimiento
-- **Recursos del Servidor**: Uso de CPU, memoria y disco
-- **Estado de Red**: Conectividad y latencia
+### Monitoreo de las Direcciones de los Paises:
+Dar Click en "Verificar EndPoints", podra ver las direcciones activas o no activas, que ponen a disposición los paises para verificar L2 y L3.
 
-### Verificaciones de Salud:
-1. **Conectividad de Base de Datos**: Verificar todas las conexiones de base de datos
-2. **Endpoints de API**: Probar todos los endpoints de API
-3. **Servicios Externos**: Verificar integraciones con terceros
-4. **Validez de Certificados**: Verificar certificados SSL/TLS
-5. **Estado de Copias de Seguridad**: Confirmar completación de backups
+![Salud del Sistemal](CIAT_ADMIN_SaludSistema_Direcciones_01.png)
 
-### Configuración de Alertas:
-1. Navegar a "Salud" → "Alertas"
-2. Establecer umbrales para:
-   - Uso de CPU (>80%)
-   - Uso de memoria (>85%)
-   - Espacio en disco (<10% libre)
-   - Errores de API (>5% tasa de error)
-   - Tiempo de respuesta (>5 segundos)
-3. Configurar canales de notificación:
-   - Alertas por correo
-   - Notificaciones SMS
-   - Advertencias en panel
 
-### Tareas de Mantenimiento:
-- **Diarias**: Rotación de logs, limpieza de archivos temporales
-- **Semanales**: Optimización de base de datos, generación de reportes
-- **Mensuales**: Backup completo del sistema, verificaciones de renovación de certificados
-- **Trimestrales**: Auditoría de seguridad, revisión de rendimiento
+### Validadcion de Reglas L1
+Dar Click en "Verify Rules", podra ver los casos de pueba de TINs definidos de los diferentes paises con sus reglas configuradas.
 
-### Respuesta a Incidentes:
-1. **Detección**: Alertas del sistema o reportes de usuarios
-2. **Evaluación**: Determinar severidad y alcance
-3. **Contención**: Aislar componentes afectados
-4. **Resolución**: Aplicar correcciones o soluciones alternativas
-5. **Recuperación**: Restaurar operaciones normales
-6. **Revisión**: Analizar causa raíz y prevenir recurrencia
+![Salud del Sistemal](CIAT_ADMIN_SaludSistema_VerificarReglas_01.png)
+
+
+### Definición de cobertura de Niveles:
+Dar Click en "Get Coverage", podra ver los niveles definidos de los diferentes paises.
+
+![Salud del Sistemal](CIAT_ADMIN_SaludSistema_DefinicionNiveles_01.png)
 
 ---
 
