@@ -68,13 +68,7 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
 
 ![Configuración de API](AT_ADMIN_ConfiguracionApi_01.png)
 
-### Monitoreo de API:
 
-El sistema proporciona:
-- Métricas de uso en tiempo real
-- Logs de errores y accesos
-- Alertas de sobrecarga
-- Reportes de actividad diaria/semanal/mensual
 
 
 ---
