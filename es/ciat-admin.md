@@ -78,6 +78,7 @@ Aparecen los Países ya agregados con sus opciones para configurar reglas Nivel 
 6. Dar Click en "Save Rule"
 
 ![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_01.png)
+
 ![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
 
 
@@ -94,7 +95,7 @@ Dar Click en "Verificar EndPoints", podra ver las direcciones activas o no activ
 ### Validadcion de Reglas L1
 Dar Click en "Verify Rules", podra ver los casos de pueba de TINs definidos de los diferentes paises con sus reglas configuradas.
 
-![Salud del Sistemal](CIAT_ADMIN_SaludSistema_VerificarReglas_01.png)
+![Salud del Sistemal](CIAT_ADMIN_SaludSistema_ReglasValidadas_01.png)
 
 
 ### Definición de cobertura de Niveles:
