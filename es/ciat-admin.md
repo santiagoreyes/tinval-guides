@@ -74,10 +74,11 @@ Aparecen los Países ya agregados con sus opciones para configurar reglas Nivel 
 2. Dar Click "Manage Rules"
 3. Dar Click "Add New Rules" y agregue Tipo de Documento, persona, Nombre.
 4. Agregue las reglas JSON y Test Case con los TINs de Prueba.
-5. Pruebe la Regla dando Click "Test Rule"
-6. Dar Click en "Save Rule"
 
 ![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_01.png)
+
+5. Pruebe la Regla dando Click "Test Rule"
+6. Dar Click en "Save Rule"
 
 ![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
 
