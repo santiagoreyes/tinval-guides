@@ -9,7 +9,7 @@ Sistema de Validación de TIN - CRS-CIAT
 Puede generar informe usando los diferentes filtros de: informe, fecha inicio, fecha fin, nivel periódo, país destino, país origen. Solo se pueden ver datos donde el país esté involucrado como Origen o Destino.
 
 ### Pasos
-1. Navegue en la sección "Estadíscas" en el menú principal.
+1. Navegar en la sección "Estadístiscas" en el menú principal.
 2. Elija los diferentes filtros a su disposición.
 3. Presione en "Generar Informe" se deplegara la información solicitada.
 4. Puede "Descargar" el Informe.
@@ -17,33 +17,23 @@ Puede generar informe usando los diferentes filtros de: informe, fecha inicio, f
 ![Estadísticas](AT_ADMIN_EstadisticasAdmin_01.png)
 
 ## Subir Certificado
-El administrador debera ingresar los datos del cliente asi como el certificado segun las especificaciones solicitadas. Tambien podra actualizar el certificado.
+El administrador debera ingresar los datos del cliente asi como el certificado segun las especificaciones solicitadas. Tambien podra actualizar el certificado una vez creado.
 
 ### Proceso para subir certificado público:
 
-1. Navegar a la sección "Subir Certificado" en el menú principal
-2. Ingrese el nombre del Cliente
-3. Ingrese el correo del Cliente
+1. Navegar a la sección "Subir Certificado" en el menú principal.
+2. Ingrese el nombre del Cliente.
+3. Ingrese el correo del Cliente.
 4. Seleccionar el archivo `public_cert.pem`
-5. Verificar que el certificado sea válido
+5. Verificar que el certificado sea válido.
 6. Hacer clic en "Registrar Cliente".
 
   
 ![Subir Certificado](AT_ADMIN_SubirCertificado_01.png)
 
-### Requisitos del certificado:
-- Formato: PEM (Privacy Enhanced Mail)
-- Algoritmo: RSA con mínimo 2048 bits
-- Certificado público solamente (no incluir clave privada)
-- Máximo tamaño: 5KB
-### Verificación del certificado:
-El sistema validará automáticamente:
-- Formato correcto del certificado
-- Fecha de expiración (mínimo 30 días de validez)
-- Estructura de clave RSA válida
 
 ## Gestionar Usuarios
-El administrador podra crear usuarios nuevos o editar los datos de los usarios ya creados. Tambien puede desahabiltar usuarios.
+El administrador podra crear usuarios nuevos o editar los datos de los usarios ya creados. Tambien puede deshabiltar usuarios.
 
 ### Crear nuevo usuario:
 
