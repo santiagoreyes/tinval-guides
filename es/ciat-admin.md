@@ -86,6 +86,8 @@ Aparecen los Países ya agregados con sus opciones para configurar reglas Nivel 
 
 ![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
 
+![Configuración de Reglasl](CIAT_ADMIN_ConfigurarL1_AddNewRuleTest_01.png)
+
 
 
 ## Salud del Sistema
