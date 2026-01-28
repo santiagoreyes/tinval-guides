@@ -6,26 +6,33 @@ Guías Previas: Guía General
 ## Primer Login
 
 Una vez que ha sido creado su Usuario le llegará un correo con la información y pasos a seguir.
-
-
-
-En caso de que no recibió el correo o no lo encuentra, puede solicitar el reenvió del correo en la opción:.....
+En caso de no recibirlo o no lo encuentra, puede solicitar el reenvió del mismo.
 
 ## Login
 
 *Propósito*: Ingresar al sistema.
-Dar click confirmando el correo "Confirm My Email" y siga los pasos.
+
+### Pasos
+
+Dar click confirmando el correo "Confirm My Email" y continue.
 
 ![Correo de Confirmación](ACCESO_Usuario_ConfirmaCorreo_01.png)
 
-### Pasos
+
 Ingrese correo y contraseña temporal.
 
 ![Correo de Confirmación](ACCESO_Usuario_Ingreso_01.png)
 
-Se le enviara a su correo código de verificación al correo 
 
-![Correo de Confirmación](ACCESO_Usuario_CodigoSeguridad_01.png)
+Inmendiatamente se enviar se enviara un código de ingreso a su correo electrónico
+
+![Mensaje de Doble confirmación](ACCESO_Usuario_CodigoSeguridad_01.png)
+
+
+Se enviara un código de ingreso a su correo electrónico.
+
+![Correo con Código](ACCESO_Usuario_CodigoConfirmacion_01.png)
+
 
 Ingrese el codigo de Verificación
 
