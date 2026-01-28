@@ -38,12 +38,15 @@ Ingrese el codigo de Verificación y si asi lo desea marque la opción Confiar e
 
 ![Correo de Confirmación](ACCESO_Usuario_CodigoSeguridad_02.png)
 
+Solicitud de ingreso con reenvió de correo electroónico  
+
+![Reenviar Correo para Ingreso](ACCESO_Usuario_ReenvioCorreo_01.png)
 
 ## Autenticación de doble factor (2fa) 
   
-Permite brindar mayor seguridad al sistema, al enviar un código de acceso al correo electrónico del usuario, ... Este código solo dura 10 minutos.
+Permite brindar mayor seguridad al sistema, enviando un código de acceso al correo electrónico del usuario de manera inmediata el mismo tiene un tiempo de duracioón de 10 minutos.
 
 
 ## Marca para confiar en el dispositivo
 
-Permite al usuario informar al sistema que cuando ingrese por el dispositivo actual, no solicite el código de doble factor de autenticación.
+Permite al usuario informar al sistema que cuando ingrese por el dispositivo actual, no solicite el código de doble factor de autenticación durante 30 días.
