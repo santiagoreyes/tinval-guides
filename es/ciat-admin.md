@@ -38,11 +38,15 @@ En estadísticas nos proporciona información en tiempo real sobre el uso y rend
 ![Gestionar Paises](CIAT_ADMIN_GestionarPaises_01.png)
 
 
-### Gestión Administrador de País.
+### Opciones Disponibles.
+
 - Modificar datos de administrador.
+  
+![Gestionar Paises](CIAT_ADMIN_GestionarPaises_EditarAdmin_01.png)
+
+
 - Cambiar de Administrador eliminando el actual.
 
-![Gestionar Paises](CIAT_ADMIN_GestionarPaises_EditarAdmin_01.png)
 ![Gestionar Paises](CIAT_ADMIN_GestionarPaises_CambiarAdmin_01.png)
 
 
@@ -50,7 +54,7 @@ En estadísticas nos proporciona información en tiempo real sobre el uso y rend
 Las Definiciones de Nivel de Paises puede ser por:
 1. Acuerdos Bilaterales: Validación directa entre dos países
 2. Defecto: El país elige un nivel a ser validado
-3. Mínimo: El país elige un nivel  minimo a ser validado 
+3. Mínimo: El país elige un nivel  mínimo a ser validado 
 
 ### Agregar Nueva Definición
 1. Seleccionar "Add New Definition" 
@@ -63,7 +67,7 @@ Las Definiciones de Nivel de Paises puede ser por:
  
 ### Niveles de Validación:
 - Nivel 1: Solo validación de formato y Dígito Verificador.
-- Nivel 2: Valida laexistencia del número en registro y porcentaje de coincidencia del nombre.
+- Nivel 2: Valida la existencia del número en registro y porcentaje de coincidencia del nombre.
 - Nivel 3: Validación completa con detalles del contribuyente.
 
 ## Configuración de Reglas Nivel 1
