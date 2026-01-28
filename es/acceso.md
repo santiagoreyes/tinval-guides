@@ -24,22 +24,22 @@ Ingrese correo y contraseña temporal.
 ![Correo de Confirmación](ACCESO_Usuario_Ingreso_01.png)
 
 
-Inmendiatamente se enviar se enviara un código de ingreso a su correo electrónico
+Inmendiatamente se enviar se enviara un código de ingreso a su correo electrónico mostrando este Mensaje.
 
 ![Mensaje de Doble confirmación](ACCESO_Usuario_CodigoSeguridad_01.png)
 
 
-Se enviara un código de ingreso a su correo electrónico.
+En su correo electrónico tendra su código de ingreso.
 
 ![Correo con Código](ACCESO_Usuario_CodigoConfirmacion_01.png)
 
 
-Ingrese el codigo de Verificación
+Ingrese el codigo de Verificación y si asi lo desea marque la opción Confiar en esta Máquina
 
 ![Correo de Confirmación](ACCESO_Usuario_CodigoSeguridad_02.png)
 
 
-## Autenticación de doble factor (2fa)
+## Autenticación de doble factor (2fa) 
   
 Permite brindar mayor seguridad al sistema, al enviar un código de acceso al correo electrónico del usuario, ... Este código solo dura 10 minutos.
 
