@@ -30,10 +30,42 @@ TIN Validation System - CRS-CIAT
 ## Validation Process
 
 ### Step-by-Step Guide
-- User sends a batch file with Tins to validate, using Web portal or via API
-- System validates file for structure,basic format rules and registered destination countries. If validation fails, batch is rejected with corresponding errors.  If validation checks, batch is received and stored for processing. Batch can be marked for inmediate processing or defered processing depending on size (threshold defined by CIAT).
-- Batch is processed, and every Tin record its validated using rules defined between requesting (origin) country and the Tin (destination) country. Result of each validation is stored.
-- The batche response is constructed and stored for later retrieval (defered), or send inmediate back in request (online processing).
+
+**TIN Batch Processing Flow:**
+
+1. **Batch Submission**
+   - User sends a batch file containing TINs for validation
+   - Available submission methods:
+     - Web portal
+     - System API
+
+2. **Initial File Validation**
+   - System verifies:
+     - ✅ File structure
+     - ✅ Basic format rules
+     - ✅ Registered destination countries
+   - **Possible outcomes:**
+     - ❌ If fails: Batch rejected with specific errors
+     - ✅ If passes: Batch accepted and stored for processing
+
+3. **Processing Decision**
+   - Based on batch size (threshold defined by CIAT):
+     - **Immediate Processing**: Small batches
+     - **Deferred Processing**: Large batches
+
+4. **Validation Processing**
+   - Each TIN record is validated individually
+   - Rules applied based on relationship between:
+     - Requesting country (**origin**)
+     - TIN country (**destination**)
+   - Each validation result is stored in the database
+
+5. **Response Generation**
+   - **For deferred processing:**
+     - Response constructed and stored
+     - Available for later retrieval
+   - **For online processing:**
+     - Response sent immediately in the original request
 
 ## Frequently Asked Questions
 
