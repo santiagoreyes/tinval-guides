@@ -4,6 +4,8 @@ TIN Validation System - CRS-CIAT
 
 > For authorized users only.
 
+Previous Guides: [Access Guide](./access.md)
+
 ## Statistics
 You can generate reports using the various filters: report type, start date, end date, period level, destination country, origin country. You can only view data where the country is involved as Origin or Destination.
 
