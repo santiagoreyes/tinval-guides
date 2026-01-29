@@ -38,7 +38,8 @@ The system processes the request and returns a success message, indicating the a
    1. Select the file containing the TINs.
 3. Click "Submit"
 
-![Validate Batches](USER_ValidationBatch_01.png)
+![Validate Batches](USER_ValidateBatch_01.png)
+
 
 The system processes the request and returns a success message, indicating the assigned batch number, which can be used to search for it in the option: "View Requests". It will normally appear among the first ones.
 
