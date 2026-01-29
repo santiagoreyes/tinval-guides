@@ -56,7 +56,7 @@ The system processes the request and returns a success message, indicating the a
 1. Navigate to "View Validation Requests"
 2. Click "View" for the different validated TINs, either individual or batch.
 
-![View Requests](USER_ValidtionRequest_01.png)
+![View Requests](USER_ValidationRequest_01.png)
 
 The system will show the results of validated TINs, both individually and in batches, indicating the assigned number, which can be used to view result details in the option: "View". It will normally appear in order of request date.
 
