@@ -1,6 +1,6 @@
 # Guía de Usuario (Rol: USER)
 
-Guías Previas: Seguridad y Control de Acceso (Web) - TEST CAMBIO
+Guias Previas: [Guía de Acceso](./acceso.md)
 
 ## Validar TIN Individual
 
