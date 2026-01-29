@@ -30,7 +30,10 @@ TIN Validation System - CRS-CIAT
 ## Validation Process
 
 ### Step-by-Step Guide
-*(Add your detailed steps here)*
+- User sends a batch file with Tins to validate, using Web portal or via API
+- System validates file for structure,basic format rules and registered destination countries. If validation fails, batch is rejected with corresponding errors.  If validation checks, batch is received and stored for processing. Batch can be marked for inmediate processing or defered processing depending on size (threshold defined by CIAT).
+- Batch is processed, and every Tin record its validated using rules defined between requesting (origin) country and the Tin (destination) country. Result of each validation is stored.
+- The batche response is constructed and stored for later retrieval (defered), or send inmediate back in request (online processing).
 
 ## Frequently Asked Questions
 
