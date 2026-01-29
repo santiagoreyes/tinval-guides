@@ -15,7 +15,7 @@ You can generate reports using the various filters: report type, start date, end
 3. Click "Generate Report" - the requested information will be displayed.
 4. You can "Download" the Report.
 
-![Statistics](AT_ADMIN_EstadisticasAdmin_01.png)
+![Statistics](AT_ADMIN_StatisticsAdmin_01.png)
 
 ## Upload Certificate
 The administrator must enter the client's data as well as the certificate according to the requested specifications. They can also update the certificate once created.
@@ -29,7 +29,7 @@ The administrator must enter the client's data as well as the certificate accord
 5. Verify that the certificate is valid.
 6. Click "Register Client".
 
-![Upload Certificate](AT_ADMIN_SubirCertificado_01.png)
+![Upload Certificate](AT_ADMIN_UploadCertificate_01.png)
 
 ## Manage Users
 The administrator can create new users or edit the data of existing users. They can also disable users.
@@ -45,7 +45,7 @@ The administrator can create new users or edit the data of existing users. They 
    - Confirm Password
 3. Click "Create User"
 
-![Manage Users](AT_ADMIN_GestionarUsuarios_01.png)
+![Manage Users](AT_ADMIN_ManageUser_01.png)
 
 ### Modify an existing user:
 
@@ -56,7 +56,7 @@ The administrator can create new users or edit the data of existing users. They 
    - Email Address
 3. Click "Save Changes"
 
-![Manage Users](AT_ADMIN_GestionarUsuarios_02.png)
+![Manage Users](AT_ADMIN_ManageUser_EditUser_01.png)
 
 ## API Configuration
 
@@ -65,7 +65,7 @@ The administrator can create new users or edit the data of existing users. They 
 3. Choose Format JSON, XML, CSV
 4. Save configuration
 
-![API Configuration](AT_ADMIN_ConfiguracionApi_01.png)
+![API Configuration](AT_ADMIN_APIConfiguration_01.png)
 
 ---
 
