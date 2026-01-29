@@ -4,6 +4,8 @@ TIN Validation System - CRS-CIAT
 
 > This guide is intended for authorized users only.
 
+Previous Guides: [Access Guide](./access.md)
+
 ## Statistics
 Statistics provides real-time information about system usage and performance.
 
