@@ -17,7 +17,7 @@ Previous Guides: [Access Guide](./access.md)
    5. Name
 3. Click "Submit"
 
-![Validate Individual TIN](USER_Tin_Individual_01.png)
+![Validate Individual TIN](USER_ValidationSingle_01.png)
 
 The system processes the request and returns a success message, indicating the assigned request number, which can be used to search for it in the option: "View Validation Requests". It will normally appear among the first ones.
 
@@ -38,7 +38,7 @@ The system processes the request and returns a success message, indicating the a
    1. Select the file containing the TINs.
 3. Click "Submit"
 
-![Validate Batches](USER_ValidarLotes_01.png)
+![Validate Batches](USER_ValidationBatch_01.png)
 
 The system processes the request and returns a success message, indicating the assigned batch number, which can be used to search for it in the option: "View Requests". It will normally appear among the first ones.
 
@@ -56,7 +56,7 @@ The system processes the request and returns a success message, indicating the a
 1. Navigate to "View Validation Requests"
 2. Click "View" for the different validated TINs, either individual or batch.
 
-![View Requests](USER_SolicitudesValidacion_01.png)
+![View Requests](USER_ValidtionRequest_01.png)
 
 The system will show the results of validated TINs, both individually and in batches, indicating the assigned number, which can be used to view result details in the option: "View". It will normally appear in order of request date.
 
@@ -65,8 +65,8 @@ The system will show the results of validated TINs, both individually and in bat
 2. In the list you can see the individual validation according to the assigned validation number.
 3. Clicking "View" will show Details of the validated TIN.
 
-![View Individual Validation](USER_ValidacionIndividual_01.png)
-![View Details of Individual Validation](USER_DetalleValidacionIndividual_01.png)
+![View Individual Validation](USER_ValidationSingle_01.png)
+![View Details of Individual Validation](USER_DetailsValidationSingle_01.png)
 
 ### View Details of Completed Batch Validation
 1. Navigate to "View Validation Requests"
@@ -78,7 +78,7 @@ The system will show the results of validated TINs, both individually and in bat
 7. There is a "Search" option for general search.
 8. A filter is displayed with various search options accessible for more specific searches.
 
-![View Completed Batch Validation](USER_ValidacionLoteCompletado_01.png)
+![View Completed Batch Validation](USER_ValidationBatchComplete_01.png)
 
 ### View Details of Pending Batch Validation
 1. Navigate to "View Validation Requests"
@@ -89,7 +89,7 @@ The system will show the results of validated TINs, both individually and in bat
 6. A filter is displayed with various search options accessible for more specific searches.
 7. You can export the information in Excel format.
 
-![View Details of Pending Batch Validation](USER_ValidacionLotePendiente_01.png)
+![View Details of Pending Batch Validation](USER_ValidationBatchPending_01.png)
 
 ### Important notes
 
