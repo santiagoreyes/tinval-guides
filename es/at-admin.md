@@ -4,6 +4,7 @@ Sistema de Validación de TIN - CRS-CIAT
 
 > Para usuarios autorizados únicamente.
 
+Guias Previas: [Guía de Acceso](./acceso.md)
 
 ## Estadísticas
 Puede generar informe usando los diferentes filtros de: informe, fecha inicio, fecha fin, nivel periódo, país destino, país origen. Solo se pueden ver datos donde el país esté involucrado como Origen o Destino.
