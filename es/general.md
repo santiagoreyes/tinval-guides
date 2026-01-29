@@ -30,7 +30,43 @@ Sistema de Validación de TIN - CRS-CIAT
 ## Proceso de Validación
 
 ### Guía Paso a Paso
-*(Agregue sus pasos detallados aquí)*
+
+**Flujo de Procesamiento de Lotes de TINs:**
+
+1. **Envío del Lote**
+   - El usuario envía un archivo por lotes (batch) con TINs para validar
+   - Métodos de envío disponibles:
+     - Portal web
+     - API del sistema
+
+2. **Validación Inicial del Archivo**
+   - El sistema verifica:
+     - ✅ Estructura del archivo
+     - ✅ Reglas básicas de formato
+     - ✅ Países destino registrados
+   - **Resultados posibles:**
+     - ❌ Si falla: Lote rechazado con errores específicos
+     - ✅ Si pasa: Lote aceptado y almacenado para procesamiento
+
+3. **Decisión de Procesamiento**
+   - Basado en el tamaño del lote (umbral definido por CIAT):
+     - **Procesamiento Inmediato**: Lotes pequeños
+     - **Procesamiento Diferido**: Lotes grandes
+
+4. **Procesamiento de Validación**
+   - Cada registro TIN se valida individualmente
+   - Se aplican las reglas definidas entre:
+     - País solicitante (**origen**)
+     - País del TIN (**destino**)
+   - Cada resultado de validación se almacena en la base de datos
+
+5. **Generación de Respuesta**
+   - **Para procesamiento diferido:**
+     - Respuesta construida y almacenada
+     - Disponible para recuperación posterior
+   - **Para procesamiento en línea:**
+     - Respuesta enviada inmediatamente en la solicitud original
+
 
 ## Preguntas Frecuentes
 
