@@ -4,6 +4,8 @@ Sistema de Validación de TIN - CRS-CIAT
 
 > Esta guía está destinada únicamente a usuarios autorizados.
 
+Guias Previas: [Guía de Acceso](./acceso.md)
+
 ## Estadísticas
 En estadísticas nos proporciona información en tiempo real sobre el uso y rendimiento del sistema.
 
