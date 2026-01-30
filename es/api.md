@@ -441,16 +441,6 @@ Contacte a soporte para ajustes según necesidades.
 - **Soporte Técnico**: Lunes-Viernes 8:00-18:00 (GMT-5)
 - **Monitoreo 24/7**: Sistema automático
 
-### 📚 Recursos Adicionales
-- **Documentación Técnica Detallada**: `https://tinval.ciat.org/docs`
-- **Especificación API**: `https://tinval.ciat.org/api/spec`
-- **Playground Pruebas**: `https://sandbox.tinval.ciat.org`
-
-### 🌐 Status del Sistema
-- **Dashboard Status**: `https://status.tinval.ciat.org`
-- **Historial Disponibilidad**: 99.9% último trimestre
-- **Mantenimiento Programado**: Notificación 72 horas antes
-
 ---
 
 **© 2026 Plataforma TinVal - Centro Interamericano de Administraciones Tributarias (CIAT)**  
