@@ -23,7 +23,7 @@ Enter email and temporary password.
 
 Immediately, an access code will be sent to your email address, showing this message.
 
-![Two-Factor Confirmation Message](ACCESS_User_CodeSecurity_02.png)
+![Two-Factor Confirmation Message](ACCESS_User_2FAuthentication_01.png)
 
 You will find your access code in your email.
 
@@ -31,7 +31,7 @@ You will find your access code in your email.
 
 Enter the verification code and, if desired, check the "Trust this Machine" option.
 
-![Confirmation Email](ACCESS_User_CodigoSeguridad_02.png)
+![Confirmation Email](ACCESS_User_CodeSecurity_02.png)
 
 Login request with email resend option.
 
