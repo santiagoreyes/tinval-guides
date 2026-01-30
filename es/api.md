@@ -106,54 +106,70 @@ graph TB
 - **Subject**: Debe incluir su `client_id`
 
 #### 2.2.2. Script de Generación (OpenSSL)
+
+Este script genera un par de certificados auto-firmados (útil para pruebas o desarrollo).  
+
+Los nombres de los archivos son **solo para organizarlos** y que te sea fácil encontrarlos después.  
+Puedes cambiarlos a lo que prefieras (ej: prueba_01, minsal, tinval_pruebas, etc.).  
+
+**Importante – Código de país**:
+- Usa en `PAIS` el código de **tu país** (el mismo que aparece en tu perfil al iniciar sesión: AR para Argentina, CL para Chile, BR para Brasil, etc.).
+- El sistema validará que coincida con tu cuenta. Si no coincide, el portal mostrará error al subir.
+- El nombre del archivo **no importa** y **no se guarda en el sistema** – solo es para que tú lo identifiques fácilmente.
+
 ```bash
 #!/bin/bash
 # generate-client-certs.sh
-# Genera par de certificados para conexión a TinVal
+# Genera par de certificados para pruebas de conexión a TinVal
 
-CLIENT_ID="AR_minsal_01"  # ← Reemplazar con su client_id asignado
-PAIS="AR"                 # ← Código país (AR, BR, CO, etc.)
-DAYS_VALID=730
+# Estos valores SOLO sirven para nombrar los archivos de forma clara
+# Cambia a lo que prefieras (ej: prueba_01, minsal, tinval)
+NOMBRE_ARCHIVO="prueba_01"      
+PAIS="AR"                       # Código de tu país (AR, BR, CL, CO, etc.)
+DAYS_VALID=730                  # Validez en días (730 = 2 años)
 
-echo "🔐 Generando certificados para: $CLIENT_ID"
-echo "=========================================="
+echo "🔐 Generando certificados de prueba"
+echo "===================================="
 
 # 1. Generar clave privada RSA 2048
 echo "1. Generando clave privada..."
-openssl genrsa -out "${CLIENT_ID}-private.key" 2048
+openssl genrsa -out "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.key" 2048
 
 # 2. Generar CSR con información básica
 echo "2. Generando Certificate Signing Request..."
-openssl req -new -key "${CLIENT_ID}-private.key" -out "${CLIENT_ID}.csr" \
-  -subj "/C=${PAIS}/O=TinVal Platform/CN=${CLIENT_ID}"
+openssl req -new -key "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.key" -out "$$   {PAIS}_   $${NOMBRE_ARCHIVO}.csr" \
+  -subj "/C=$$   {PAIS}/O=TinVal Platform/CN=   $${PAIS}_${NOMBRE_ARCHIVO}"
 
 # 3. Generar certificado auto-firmado
 echo "3. Generando certificado..."
-openssl x509 -req -days ${DAYS_VALID} -in "${CLIENT_ID}.csr" \
-  -signkey "${CLIENT_ID}-private.key" -out "${CLIENT_ID}-public.crt"
+openssl x509 -req -days $$   {DAYS_VALID} -in "   $${PAIS}_${NOMBRE_ARCHIVO}.csr" \
+  -signkey "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.key" -out "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-public.crt"
 
-# 4. Convertir a formato PEM (requerido)
+# 4. Convertir a formato PEM (el requerido por el sistema)
 echo "4. Convirtiendo a formato PEM..."
-openssl rsa -in "${CLIENT_ID}-private.key" -out "${CLIENT_ID}-private.pem"
-cp "${CLIENT_ID}-public.crt" "${CLIENT_ID}-public.pem"
+openssl rsa -in "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.key" -out "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.pem"
+cp "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-public.crt" "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-public.pem"
 
-# 5. Crear archivo para subir al portal
-echo "5. Preparando archivo para registro..."
-cat "${CLIENT_ID}-public.pem" > "${CLIENT_ID}-for-upload.pem"
+# 5. Crear archivo listo para subir al portal
+echo "5. Preparando archivo para subir al portal..."
+cat "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-public.pem" > "$$   {PAIS}_   $${NOMBRE_ARCHIVO}-para-subir.pem"
 
 echo ""
 echo "✅ CERTIFICADOS GENERADOS:"
 echo "=========================="
-echo "📄 Para SUBIR al Portal TinVal:"
-echo "   Archivo: ${CLIENT_ID}-for-upload.pem"
+echo "📄 Archivo para SUBIR al Portal TinVal (certificado público):"
+echo "   $$   {PAIS}_   $${NOMBRE_ARCHIVO}-para-subir.pem"
 echo ""
-echo "🔒 Para USO en su APLICACIÓN (NO compartir):"
-echo "   Archivo: ${CLIENT_ID}-private.pem"
+echo "🔒 Archivos para USAR en tu aplicación (NO compartir nunca):"
+echo "   Clave privada: $$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.pem"
+echo "   Certificado público (PEM): $$   {PAIS}_   $${NOMBRE_ARCHIVO}-public.pem"
 echo ""
-echo "⚠️  SEGURIDAD CRÍTICA:"
-echo "   • NUNCA comparta ${CLIENT_ID}-private.pem"
-echo "   • Almacene en lugar seguro (HSM recomendado)"
-echo "   • Configure permisos: chmod 600 *.pem"
+echo "⚠️ SEGURIDAD CRÍTICA:"
+echo " • NUNCA compartas $$   {PAIS}_   $${NOMBRE_ARCHIVO}-private.pem"
+echo " • Guárdalo en un lugar seguro (HSM recomendado)"
+echo " • Configura permisos estrictos: chmod 600 *.pem"
+echo ""
+echo "Nota: Una vez subas el certificado público al Portal, el sistema te asignará automáticamente un client_id real (ej: AR_tu_nombre_01)."
 ```
 
 #### 2.2.3. Para Entornos de Producción
