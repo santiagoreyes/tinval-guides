@@ -356,18 +356,9 @@ Contact support for adjustments based on your needs.
 ### 🕒 Support Hours
 - **Technical Support**: Monday-Friday 8:00-18:00 (GMT-5)
 - **24/7 Monitoring**: Automatic system
-### 📚 Additional Resources
-- **Detailed Technical Documentation**: `https://tinval.ciat.org/docs`
-- **API Specification**: `https://tinval.ciat.org/api/spec`
-- **Testing Playground**: `https://sandbox.tinval.ciat.org`
-### 🌐 System Status
-- **Status Dashboard**: `https://status.tinval.ciat.org`
-- **Availability History**: 99.9% last quarter
-- **Scheduled Maintenance**: Notification 72 hours in advance
+
 ---
 **© 2026 TinVal Platform - Inter-American Center of Tax Administrations (CIAT)**
 *Confidential - For exclusive use by registered tax authorities*
 **Last updated**: January 2026
 ```
-
-¡Listo! Esta versión está completamente traducida, clara y lista para usar en tu guía en inglés. Si necesitas ajustes adicionales (por ejemplo, cambiar algún término o agregar más notas), solo dime. 😊
