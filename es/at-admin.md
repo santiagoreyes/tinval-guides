@@ -6,6 +6,18 @@ Sistema de Validación de TIN - CRS-CIAT
 
 Guias Previas: [Guía de Acceso](./acceso.md)
 
+### Acceso a la Guía Técnica de Integración con la API
+
+Para integrar tu sistema con la API de validación de TIN (autenticación con certificados x.509, obtención de tokens OAuth y llamadas a la API), consulta [Guia API](./api.md).
+
+Esta guía incluye:
+- Instrucciones paso a paso para generar y registrar certificados
+- Script Python de referencia completo
+- Ejemplos de llamadas a los endpoints de producción y pruebas
+- Troubleshooting específico para errores comunes (401, invalid issuer, etc.)
+
+**Importante**: Esta guía contiene detalles técnicos sensibles del flujo de autenticación. No la compartas externamente ni la publiques en sitios públicos.
+
 ## Estadísticas
 Puede generar informe usando los diferentes filtros de: informe, fecha inicio, fecha fin, nivel periódo, país destino, país origen. Solo se pueden ver datos donde el país esté involucrado como Origen o Destino.
 
