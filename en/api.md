@@ -79,48 +79,74 @@ graph TB
 - **Format**: X.509 PEM
 - **Validity**: Minimum 365 days
 - **Subject**: Must include your `client_id`
+
 #### 2.2.2. Generation Script (OpenSSL)
+
+This script generates a self-signed certificate pair (useful for testing or development).
+
+The file names are **only for organizing them** so you can easily find them later.  
+You can change them to whatever you prefer (e.g., test_01, minsal, tinval_tests, etc.).
+
+**Important – Country Code**:
+- Use in `PAIS` the code of **your country** (the same one that appears in your profile when you log in: AR for Argentina, CL for Chile, BR for Brazil, etc.).
+- The system will validate that it matches your account. If it does not match, the portal will show an error when uploading.
+- The file name **does not matter** and **is not stored in the system** – it is only so you can identify it easily.
+
 ```bash
 #!/bin/bash
 # generate-client-certs.sh
-# Generates certificate pair for TinVal connection
-CLIENT_ID="AR_minsal_01" # ← Replace with your assigned client_id
-PAIS="AR" # ← Country code (AR, BR, CO, etc.)
-DAYS_VALID=730
-echo "🔐 Generating certificates for: $CLIENT_ID"
-echo "=========================================="
+# Generates certificate pair for testing connection to TinVal
+
+# These values are ONLY for clearly naming the files
+# Change them to whatever you prefer (e.g., test_01, minsal, tinval)
+FILE_NAME="test_01"      
+COUNTRY="AR"                       # Your country code (AR, BR, CL, CO, etc.)
+DAYS_VALID=730                     # Validity in days (730 = 2 years)
+
+echo "🔐 Generating test certificates"
+echo "===================================="
+
 # 1. Generate RSA 2048 private key
 echo "1. Generating private key..."
-openssl genrsa -out "${CLIENT_ID}-private.key" 2048
+openssl genrsa -out "$$   {COUNTRY}_   $${FILE_NAME}-private.key" 2048
+
 # 2. Generate Certificate Signing Request with basic info
 echo "2. Generating Certificate Signing Request..."
-openssl req -new -key "${CLIENT_ID}-private.key" -out "${CLIENT_ID}.csr" \
-  -subj "/C=${PAIS}/O=TinVal Platform/CN=${CLIENT_ID}"
+openssl req -new -key "$$   {COUNTRY}_   $${FILE_NAME}-private.key" -out "$$   {COUNTRY}_   $${FILE_NAME}.csr" \
+  -subj "/C=$$   {COUNTRY}/O=TinVal Platform/CN=   $${COUNTRY}_${FILE_NAME}"
+
 # 3. Generate self-signed certificate
 echo "3. Generating certificate..."
-openssl x509 -req -days ${DAYS_VALID} -in "${CLIENT_ID}.csr" \
-  -signkey "${CLIENT_ID}-private.key" -out "${CLIENT_ID}-public.crt"
-# 4. Convert to PEM format (required)
+openssl x509 -req -days $$   {DAYS_VALID} -in "   $${COUNTRY}_${FILE_NAME}.csr" \
+  -signkey "$$   {COUNTRY}_   $${FILE_NAME}-private.key" -out "$$   {COUNTRY}_   $${FILE_NAME}-public.crt"
+
+# 4. Convert to PEM format (required by the system)
 echo "4. Converting to PEM format..."
-openssl rsa -in "${CLIENT_ID}-private.key" -out "${CLIENT_ID}-private.pem"
-cp "${CLIENT_ID}-public.crt" "${CLIENT_ID}-public.pem"
-# 5. Prepare file for portal upload
-echo "5. Preparing file for registration..."
-cat "${CLIENT_ID}-public.pem" > "${CLIENT_ID}-for-upload.pem"
+openssl rsa -in "$$   {COUNTRY}_   $${FILE_NAME}-private.key" -out "$$   {COUNTRY}_   $${FILE_NAME}-private.pem"
+cp "$$   {COUNTRY}_   $${FILE_NAME}-public.crt" "$$   {COUNTRY}_   $${FILE_NAME}-public.pem"
+
+# 5. Prepare file ready for portal upload
+echo "5. Preparing file for portal upload..."
+cat "$$   {COUNTRY}_   $${FILE_NAME}-public.pem" > "$$   {COUNTRY}_   $${FILE_NAME}-for-upload.pem"
+
 echo ""
 echo "✅ CERTIFICATES GENERATED:"
 echo "=========================="
-echo "📄 For UPLOAD to TinVal Portal:"
-echo " File: ${CLIENT_ID}-for-upload.pem"
+echo "📄 File to UPLOAD to TinVal Portal (public certificate):"
+echo "   $$   {COUNTRY}_   $${FILE_NAME}-for-upload.pem"
 echo ""
-echo "🔒 For USE in your APPLICATION (DO NOT share):"
-echo " File: ${CLIENT_ID}-private.pem"
+echo "🔒 Files to USE in your application (DO NOT share):"
+echo "   Private key: $$   {COUNTRY}_   $${FILE_NAME}-private.pem"
+echo "   Public certificate (PEM): $$   {COUNTRY}_   $${FILE_NAME}-public.pem"
 echo ""
 echo "⚠️ CRITICAL SECURITY:"
-echo " • NEVER share ${CLIENT_ID}-private.pem"
-echo " • Store in a secure location (HSM recommended)"
-echo " • Set permissions: chmod 600 *.pem"
+echo " • NEVER share $$   {COUNTRY}_   $${FILE_NAME}-private.pem"
+echo " • Store it in a secure location (HSM recommended)"
+echo " • Set strict permissions: chmod 600 *.pem"
+echo ""
+echo "Note: Once you upload the public certificate to the Portal, the system will automatically assign you a real client_id (e.g., AR_your_name_01)."
 ```
+
 #### 2.2.3. For Production Environments
 In production, it is recommended to use certificates issued by a recognized Certificate Authority (CA):
 1. Generate CSR with the script above
