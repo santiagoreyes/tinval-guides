@@ -15,27 +15,27 @@ If you do not receive it or cannot find it, you can request it to be resent.
 
 Click to confirm your email "Confirm My Email" and continue.
 
-![Confirmation Email](ACCESO_Usuario_ConfirmaCorreo_01.png)
+![Confirmation Email](ACCESS_User_ConfirmEmail_01.png)
 
 Enter email and temporary password.
 
-![Confirmation Email](ACCESO_Usuario_Ingreso_01.png)
+![Confirmation Email](ACCESS_User_Login_01.png)
 
 Immediately, an access code will be sent to your email address, showing this message.
 
-![Two-Factor Confirmation Message](ACCESO_Usuario_CodigoSeguridad_01.png)
+![Two-Factor Confirmation Message](ACCESS_User_CodeSecurity_02.png)
 
 You will find your access code in your email.
 
-![Email with Code](ACCESO_Usuario_CodigoConfirmacion_01.png)
+![Email with Code](ACCESS_User_CodeConfirm_01.png)
 
 Enter the verification code and, if desired, check the "Trust this Machine" option.
 
-![Confirmation Email](ACCESO_Usuario_CodigoSeguridad_02.png)
+![Confirmation Email](ACCESS_User_CodigoSeguridad_02.png)
 
 Login request with email resend option.
 
-![Resend Email for Login](ACCESO_Usuario_ReenvioCorreo_01.png)
+![Resend Email for Login](ACCESS_User_ResendEmail_01.png)
 
 ## Two-Factor Authentication (2FA)
 
