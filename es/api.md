@@ -48,6 +48,20 @@ La Plataforma TinVal de CIAT implementa un sistema de validación de TIN (Tax Id
 - **Servidor IAM (OAuth)**: `https://auth.tinval.ciat.org/auth`
 - **Ambiente de Pruebas**: `https://tinval-test-proxy.eastus2.azurecontainer.io`
 
+### 🌍 URLs del Sistema
+
+**Producción (futuro) / Dominio institucional** (actualmente apunta al ambiente de test):
+- Portal TinVal: `https://tinval.ciat.org`
+- API de Validación: `https://api.tinval.ciat.org`
+- Servidor IAM (OAuth) - Token Endpoint: `https://auth.tinval.ciat.org/auth/realms/hub/protocol/openid-connect/token`
+
+**Ambiente de Pruebas (dominio azure)**:
+- Portal TinVal: `https://tinval-test-proxy.eastus2.azurecontainer.io`
+- API de Validación: `https://tinval-test-proxy.eastus2.azurecontainer.io/api`
+- Servidor IAM (OAuth) - Token Endpoint: `https://tinval-test-proxy.eastus2.azurecontainer.io/auth/realms/hub/protocol/openid-connect/token`
+
+**Nota**: En pruebas, puedes usar indistintamente el dominio Azure  o el dominio institucional donde el DNS ya esté propagado (tinval.ciat.org, api.tinval.ciat.org, auth.tinval.ciat.org). En el futuro, el dominio institucional será el principal para producción.
+
 ### 🚀 Para Empezar
 1. Generar par de certificados (público/privado)
 2. Subir certificado público via Portal TinVal
@@ -212,6 +226,10 @@ Lo **firma digitalmente** con su clave privada usando algoritmo RS256.
 ```
 POST https://auth.tinval.ciat.org/auth/realms/hub/protocol/openid-connect/token
 ```
+En ambiente de pruebas también puedes usar:
+```
+POST https://tinval-test-proxy.eastus2.azurecontainer.io/auth/realms/hub/protocol/openid-connect/token
+```
 
 #### 2.5.2. Parámetros Requeridos
 ```http
@@ -271,10 +289,10 @@ Script completo de referencia que automatiza todo el proceso:
 - Envío de solicitudes a la API
 - Manejo de respuestas
 
-#### 2.7.2. Descargar y Configurar
+#### 2.7.2. Obtener script y Configurar
 ```bash
-# Descargar script de referencia
-wget https://tinval.ciat.org/scripts/simple_api_tester_v2.py
+# Obtener script de referencia
+Obtener el script desde donde CIAT determine: simple_api_tester_v2.py
 chmod +x simple_api_tester_v2.py
 
 # Instalar dependencias
@@ -283,24 +301,24 @@ pip install requests cryptography pyjwt
 
 #### 2.7.3. Ejemplos de Uso
 ```bash
-# Ambiente de Producción
+# (dominio Institucional- test ahora, futuro producción)
 python3 simple_api_tester_v2.py \
-  --keycloak https://auth.tinval.ciat.org/auth \
-  --api https://tinval.ciat.org \
+  --keycloak https://auth.tinval.ciat.org \
+  --api https://api.tinval.ciat.org \
   --keycloak_audience auth.tinval.ciat.org \
   send \
   --file lote_tins.xml \
-  --cert /seguro/certificados/AR_minsal_01-private.pem \
+  --cert AR_minsal_01-private.pem \
   --client AR_minsal_01
 
-# Ambiente de Pruebas
+# (dominio Azure- test)
 python3 simple_api_tester_v2.py \
   --keycloak https://tinval-test-proxy.eastus2.azurecontainer.io/auth \
-  --api https://tinval-test-proxy.eastus2.azurecontainer.io \
+  --api https://tinval-test-proxy.eastus2.azurecontainer.io/ \
   --keycloak_audience tinval-test-proxy.eastus2.azurecontainer.io \
   send \
   --file test_batch.xml \
-  --cert /seguro/certificados/TEST-client-private.pem \
+  --cert TEST_client-private.pem \
   --client TEST_client_01
 ```
 
