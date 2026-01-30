@@ -19,7 +19,7 @@ Statistics provides real-time information about system usage and performance.
 7. Click "Generate Report"
 8. Export to PDF, Excel, or CSV
 
-![Statistics Generate Reports](CIAT_ADMIN_GenerarReportes_01.png)
+![Statistics Generate Reports](CIAT_ADMIN_StatisticReport_01.png)
 
 ## Manage Countries
 
@@ -36,17 +36,17 @@ Statistics provides real-time information about system usage and performance.
    - Password and Confirmation
 5. Click "Enroll"
 
-![Manage Countries](CIAT_ADMIN_GestionarPaises_01.png)
+![Manage Countries](CIAT_ADMIN_ManageCountries_EnrollNewCountryAdmin_01.png)
 
 ### Available Options
 
 - Modify administrator data.
 
-![Manage Countries](CIAT_ADMIN_GestionarPaises_EditarAdmin_01.png)
+![Manage Countries](CIAT_ADMIN_ManageCountries_EditAdmin_01.png)
 
 - Change Administrator by removing the current one.
 
-![Manage Countries](CIAT_ADMIN_GestionarPaises_CambiarAdmin_01.png)
+![Manage Countries](CIAT_ADMIN_ManageCountries_ChangeUserAdmin_01.png)
 
 ## Country Level Definitions
 Country Level Definitions can be:
@@ -61,7 +61,7 @@ Country Level Definitions can be:
 4. Define validation levels (1, 2, or 3)
 6. Click "Create"
 
-![Level Definitions](CIAT_ADMIN_DefinicionesNivel_CrearDefinicion_01.png)
+![Level Definitions](CIAT_ADMIN_LevelDefinitions_AddNewDefinition_01.png)
 
 ### Validation Levels:
 - Level 1: Only format validation and Check Digit.
@@ -77,14 +77,14 @@ Countries already added appear with their options for configuring Level 1 rules.
 3. Click "Add New Rules" and add Document Type, Person, Name.
 4. Add the JSON rules and Test Case with the Test TINs.
 
-![Rules Configuration](CIAT_ADMIN_ConfigurarL1_AddNewRule.png)
+![Rules Configuration](CIAT_ADMIN_RulesLevel1_AddNewRule_01.png)
 
 5. Test the Rule by clicking "Test Rule"
 6. Click "Save Rule"
 
-![Rules Configuration](CIAT_ADMIN_ConfigurarL1_AddNewRule_TestRule_01.png)
+![Rules Configuration](CIAT_ADMIN_RulesLevel1_TestRule_01.png)
 
-![Rules Configuration](CIAT_ADMIN_ConfigurarL1_AddNewRuleTest_01.png)
+![Rules Configuration](CIAT_ADMIN_RulesLevel1_AddNewRuleTest_01.png)
 
 ## System Health
 System monitoring with tools such as:
@@ -93,17 +93,17 @@ System monitoring with tools such as:
 - Active or inactive country endpoints.
 Click "Verify EndPoints" to see the active or inactive endpoints that countries make available for verifying L2 and L3.
 
-![System Health](CIAT_ADMIN_SaludSistema_Direcciones_01.png)
+![System Health](CIAT_ADMIN_SystemHealth_EndPoints_01.png)
 
 ### Monitoring L1 Rules Validation
 Click "Verify Rules" to see the defined test cases for TINs from different countries with their configured rules.
 
-![System Health](CIAT_ADMIN_SaludSistema_ReglasValidadas_01.png)
+![System Health](CIAT_ADMIN_SystemHealth_ValidateRulesL1_01.png)
 
 ### Monitoring Level Coverage Definitions:
 Click "Get Coverage" to see the defined levels for different countries.
 
-![System Health](CIAT_ADMIN_SaludSistema_DefinicionNiveles_01.png)
+![System Health](CIAT_ADMIN_SystemHealth_GetCoverage_01.png)
 
 ---
 
