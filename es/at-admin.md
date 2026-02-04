@@ -4,7 +4,7 @@ Sistema de Validación de TIN - CRS-CIAT
 
 > Para usuarios autorizados únicamente.
 
-Guias Previas: [Guía de Acceso](./acceso.md)
+Guias Previas: [Guía de Acceso](./access.md)
 
 ### Acceso a la Guía Técnica de Integración con la API
 
