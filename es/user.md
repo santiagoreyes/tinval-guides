@@ -1,6 +1,6 @@
 # Guía de Usuario (Rol: USER)
 
-Guias Previas: [Guía de Acceso](./acceso.md)
+Guias Previas: [Guía de Acceso](./access.md)
 
 ## Validar TIN Individual
 
