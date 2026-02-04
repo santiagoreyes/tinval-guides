@@ -4,6 +4,8 @@ TIN Validation System - CRS-CIAT
 
 > This guide is intended for authorized users only.
 
+Previous Guides: [Access Guide](./access.md)
+
 ## Quick Navigation
 
 - [Getting Started](#getting-started)
