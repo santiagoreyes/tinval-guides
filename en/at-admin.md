@@ -98,6 +98,8 @@ The system will send an email with the scheduled maintenance information to all 
 
 ![Maintenance Window](AT_ADMIN_EmailMaintenanceWindow_01.png) 
 
+![Maintenance Window](AT_ADMIN_EmailOMaintenanceWindow_01.png) 
+
 
 
 
