@@ -81,6 +81,17 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
 
 ![Configuración de API](AT_ADMIN_ConfiguracionApi_01.png)
 
+ ### Ventana de Mantenimiento
+
+1. Navegar a "Configuración API"
+2. Deslizar a "Ventana de Mantenimiento"
+3. Elegir fecha de inicio.
+4. Elegir fecha de fin.
+5. Agregar Nota
+6. Dar Click en "Guardar"
+
+![Ventana de Mantenimiento](AT_ADMIN_VentanaMantenimiento_01.png)
+
 
 
 
