@@ -79,6 +79,19 @@ The administrator can create new users or edit the data of existing users. They 
 
 ![API Configuration](AT_ADMIN_APIConfiguration_01.png)
 
+### Maintenance Window 
+
+1. Navigate to "API Configuration"
+2. Swipe to open Maintenance Window
+3. Choose start date
+4. Choose end date
+5. Write Note
+6. Save
+
+![Maintenance Window](AT_ADMIN_MaintenanceWindow _01.png) 
+
+
+
 ---
 
 *For technical assistance, contact the support team: support.tinvalidator@ciat.org*
