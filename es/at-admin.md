@@ -92,7 +92,10 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
 
 ![Ventana de Mantenimiento](AT_ADMIN_VentanaMantenimiento_01.png)
 
-Correo del Mantenimiento Programado
+#### Correo del Mantenimiento Programado
+
+El sistema enviará un correo de la programación del mantenimiento programado a todos los administradores de país registrados.  Adicionalmente agendará un correo Recordatorio de dicho mantenimiento si el inicio del mantenimiento ocurre dentro de las siguientes 24 horas.
+
 
 ![Ventana de Mantenimiento](AT_ADMIN_CorreoVentanaMantenimiento_01.png)
 
