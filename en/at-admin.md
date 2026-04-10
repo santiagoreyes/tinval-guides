@@ -88,7 +88,7 @@ The administrator can create new users or edit the data of existing users. They 
 5. Write Note
 6. Save
 
-![Maintenance Window](AT_ADMIN_MaintenanceWindow _01.png) 
+![Maintenance Window](AT_ADMIN_MaintenanceWindow_01.png) 
 
 
 
