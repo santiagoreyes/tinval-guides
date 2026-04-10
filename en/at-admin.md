@@ -92,6 +92,12 @@ The administrator can create new users or edit the data of existing users. They 
 
 
 
+![Maintenance Window](AT_ADMIN_EmailMaintenanceWindow_01.png) 
+
+
+
+
+
 ---
 
 *For technical assistance, contact the support team: support.tinvalidator@ciat.org*
