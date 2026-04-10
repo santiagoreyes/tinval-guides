@@ -92,7 +92,9 @@ The administrator can create new users or edit the data of existing users. They 
 
 
 
-Scheduled maintenance email
+### Scheduled maintenance email
+
+The system will send an email with the scheduled maintenance information to all registered country administrators. Additionally, it will schedule a reminder email if the maintenance is due to begin within the next 24 hours.
 
 ![Maintenance Window](AT_ADMIN_EmailMaintenanceWindow_01.png) 
 
