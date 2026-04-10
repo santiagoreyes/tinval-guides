@@ -92,6 +92,8 @@ The administrator can create new users or edit the data of existing users. They 
 
 
 
+Scheduled maintenance email
+
 ![Maintenance Window](AT_ADMIN_EmailMaintenanceWindow_01.png) 
 
 
