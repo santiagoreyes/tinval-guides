@@ -92,6 +92,9 @@ El administrador podra crear usuarios nuevos o editar los datos de los usarios y
 
 ![Ventana de Mantenimiento](AT_ADMIN_VentanaMantenimiento_01.png)
 
+Correo del Mantenimiento Programado
+
+![Ventana de Mantenimiento](AT_ADMIN_CorreoVentanaMantenimiento_01.png)
 
 
 
