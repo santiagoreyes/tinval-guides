@@ -99,6 +99,8 @@ El sistema enviará un correo de la programación del mantenimiento programado a
 
 ![Ventana de Mantenimiento](AT_ADMIN_CorreoVentanaMantenimiento_01.png)
 
+![Ventana de Mantenimiento](AT_ADMIN_CorreoVentanaMantenimientoO_01.png)
+
 
 
 ---
